@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+#
+# These are the funciton to be called when we are on that particular
+#  url/path/route/whatever you call it
+# ~~~~
+
+# Home page
+GET    /                           controllers.Application.index
+GET    /timeline                   controllers.Application.timeline(query)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file              controllers.Assets.at(path="/public", file)
